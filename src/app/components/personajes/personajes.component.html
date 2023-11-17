@@ -1,0 +1,19 @@
+
+<div>
+    <button [routerLink]="['/detalle', idSerie]" style="background-color: green; color: white; padding: 10px 20px; border: none; border-radius: 5px; font-size: 16px;">Volver</button>
+
+    <table class="table table-dark">
+        <thead>
+            <tr>
+                <th>Personaje</th>
+                <th>Imagen</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let per of personajes">
+                <td>{{per.nombre}}</td>
+                <td><img style="width: 150px; height: 150px;" src="{{per.imagen}}" alt=""></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
